@@ -15,3 +15,6 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_5yeow")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0671441, 0.215775, -0.974132, -0.0148375, 0.976443, 0.215264, 0.997633, 0, 0.068764, -4.65146, 2.28748, 0)
