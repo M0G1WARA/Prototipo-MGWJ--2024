@@ -29,3 +29,7 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_killzone_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	$".".position = Vector3(0,1,0)
