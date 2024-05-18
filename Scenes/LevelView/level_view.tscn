@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://d4dlx3ndnomh7"]
+[gd_scene load_steps=2 format=3 uid="uid://d4dlx3ndnomh7"]
+
+[ext_resource type="Script" path="res://Scenes/LevelView/level_view.gd" id="1_gchmj"]
 
 [node name="LevelView" type="Node3D"]
+script = ExtResource("1_gchmj")
+
+[node name="Level" type="Node3D" parent="."]
