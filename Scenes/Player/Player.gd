@@ -31,5 +31,5 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_killzone_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func _on_killzone_body_entered(body):
 	$".".position = Vector3(0,1,0)

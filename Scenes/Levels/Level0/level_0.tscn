@@ -28,4 +28,4 @@ transform = Transform3D(0.0671441, 0.215775, -0.974132, -0.0148375, 0.976443, 0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 shape = SubResource("BoxShape3D_mfkrr")
 
-[connection signal="body_shape_entered" from="Killzone" to="Player" method="_on_killzone_body_shape_entered"]
+[connection signal="body_entered" from="Killzone" to="Player" method="_on_killzone_body_entered"]
