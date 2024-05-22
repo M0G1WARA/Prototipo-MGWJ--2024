@@ -21,12 +21,16 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
+	if direction and Global.stamina >0:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		Global.stamina -= 0.05
+		Global.water -= 0.01
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		if Global.stamina <=100: 
+			Global.stamina += 0.01
 
 	move_and_slide()
 

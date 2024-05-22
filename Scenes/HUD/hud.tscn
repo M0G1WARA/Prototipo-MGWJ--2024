@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://s66o73rbuxu7"]
+[gd_scene load_steps=5 format=3 uid="uid://s66o73rbuxu7"]
+
+[ext_resource type="Script" path="res://Scenes/HUD/hud.gd" id="1_mabou"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gpy7n"]
 bg_color = Color(0.691602, 0.0820292, 0, 1)
@@ -22,6 +24,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_mabou")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
