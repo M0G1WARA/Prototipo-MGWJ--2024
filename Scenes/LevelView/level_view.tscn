@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4dlx3ndnomh7"]
+[gd_scene load_steps=4 format=3 uid="uid://d4dlx3ndnomh7"]
 
 [ext_resource type="Script" path="res://Scenes/LevelView/level_view.gd" id="1_gchmj"]
+[ext_resource type="PackedScene" uid="uid://s66o73rbuxu7" path="res://Scenes/HUD/hud.tscn" id="2_1edps"]
 [ext_resource type="PackedScene" uid="uid://duuyik44ejp4s" path="res://Scenes/Levels/Level1/level_1.tscn" id="2_imm6r"]
 
 [node name="LevelView" type="Node3D"]
@@ -8,6 +9,8 @@ script = ExtResource("1_gchmj")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 3, 6.57612)
+
+[node name="HUD" parent="Camera3D" instance=ExtResource("2_1edps")]
 
 [node name="Level" type="Node3D" parent="."]
 
